@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livro de Receitas Colaborativo</title>
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">🍽️</div>
+        <div>
+          <p class="eyebrow">Projeto 28</p>
+          <h1>Livro de Receitas Colaborativo</h1>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="loginButton" class="discord-button" type="button">Entrar com Discord</button>
+        <div id="userBadge" class="user-badge hidden" aria-live="polite"></div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero panel">
+        <div>
+          <p class="eyebrow accent">Receitas em destaque</p>
+          <h2>Descubra pratos rápidos, saborosos e ajustáveis para qualquer mesa.</h2>
+        </div>
+
+        <div class="search-box">
+          <label class="sr-only" for="searchInput">Buscar receita</label>
+          <input id="searchInput" type="search" placeholder="Buscar por prato, tempo ou ingrediente" />
+        </div>
+      </section>
+
+      <section id="recipeList" class="recipe-grid" aria-live="polite"></section>
+    </main>
+
+    <footer class="footer">
+      <span>Chave: P26-2B-8983-AF39-E3CF-C0B3</span>
+    </footer>
+
+    <script type="module" src="/public/app.js"></script>
+  </body>
+</html>
